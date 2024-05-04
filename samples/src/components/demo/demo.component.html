@@ -1,0 +1,28 @@
+<div class="options-pane w-25">
+  <div class="w-100 align-items-center">
+    <button class="btn btn-primary w-50 pattern-btn" (click) ="onPatternChange()">
+      {{currentPattern.name}}
+    </button>
+  </div>
+
+  <div class="w-100 p-3">
+    <div class="w-100">
+      <div class="w-50 d-inline-block">
+        <label class="label"> Content </label>
+      </div>
+      <div class="w-50 d-inline-block ">
+        <input type="string" placeholder="*" (change)="contentChange(content.value)" #content
+        class="float-right w-100">
+      </div>
+    </div>
+    <div class="w-100">
+      <div class="w-50 d-inline-block">
+        <label class="label"> No. of stars </label>
+      </div>
+      <div class="w-50 d-inline-block ">
+        <input type="string" placeholder="50" (change)="starCountChange(starCount.value)" #starCount
+        class="float-right w-100">
+      </div>
+    </div>
+  </div>
+</div>

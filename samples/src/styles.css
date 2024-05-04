@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+.w-25 {
+    width:25%;
+}
+
+.w-50 {
+    width:50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+.float-right {
+    position: relative;
+    float:right;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.pb-1 {
+    padding-bottom: 1rem ;
+}
+
+.options-pane {
+    background-color: gray;
+}
+
+.label {
+    color: white;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.pattern-btn {
+    margin-left: 25%;
+}
+
+.p-3 {
+    padding: 3px;
+}
+
