@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { patterns } from 'src/constants/constants';
 import { starField } from 'starfield-ag'
+const v = require('vector-ag');
+const Vector2D = v.Vector2D;
 
 @Injectable({
   providedIn: 'root'
@@ -10,32 +12,41 @@ export class ActionHandlingService {
   currentPatternIndex = 0;
   currentPattern = patterns[this.currentPatternIndex];
   starFieldHandle: starField;
+  mousePosition = new Vector2D(0,0);
+
 
   constructor() { }
 
-  buildAndInitializePattern(pattern, pos) {
-    console.log('buildAndInitializePattern called',pattern);
+  updateMousePosition(event){
+    this.mousePosition.x = event.clientX;
+    this.mousePosition.y = event.clientY;  
+  }
+
+  buildAndInitializePattern(pattern) {
+
+    document.body.onmousemove = (event) => { this.updateMousePosition(event)};
 
     if(this.starFieldHandle) {
       this.starFieldHandle.destroy();
+      this.starFieldHandle = null;
     }
 
     const config = pattern.config;
     if(pattern.name === 'Spiral') {
       config.data = {
-        center: pos
+        center: this.mousePosition
       };
     } else if (pattern.name === 'Circle') {
       config.data = {
-        center: pos
+        center: this.mousePosition
       };
     } else if (pattern.name === 'Follower') {
       config.data = {
-        targetPos: pos
+        targetPos: this.mousePosition
       };
     } else if (pattern.name === 'Star Field') {
       config.data = {
-        targetPos: pos
+        targetPos: this.mousePosition
       };
     }
 
@@ -44,10 +55,10 @@ export class ActionHandlingService {
     this.starFieldHandle.init();
   }
 
-  rotatePattern(pos) {
+  rotatePattern() {
     this.currentPatternIndex = (this.currentPatternIndex+1)%patterns.length;
     this.currentPattern = patterns[this.currentPatternIndex];
-    this.buildAndInitializePattern(this.currentPattern, pos);
+    this.buildAndInitializePattern(this.currentPattern);
   }
 
   changeStarCount(newCnt) {

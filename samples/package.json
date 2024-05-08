@@ -20,7 +20,7 @@
     "@angular/router": "^14.2.0",
     "bootstrap": "^5.3.3",
     "rxjs": "~7.5.0",
-    "starfield-ag": "5.4.0",
+    "starfield-ag": "6.0.2",
     "tslib": "^2.3.0",
     "vector-ag": "^4.0.0",
     "zone.js": "~0.11.4"

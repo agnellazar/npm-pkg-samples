@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionHandlingService } from 'src/services/action-handling.service';
 
 @Component({
   selector: 'app-description',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DescriptionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public actionHandlingService: ActionHandlingService
+  ) { }
 
   ngOnInit(): void {
-    console.log('description init');
+    if( !this.actionHandlingService.starFieldHandle) {
+      this.actionHandlingService.buildAndInitializePattern(this.actionHandlingService.currentPattern);
+    }
   }
 
 }
