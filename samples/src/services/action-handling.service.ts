@@ -23,7 +23,6 @@ export class ActionHandlingService {
   }
 
   buildAndInitializePattern(pattern) {
-
     document.body.onmousemove = (event) => { this.updateMousePosition(event)};
 
     if(this.starFieldHandle) {
@@ -32,6 +31,7 @@ export class ActionHandlingService {
     }
 
     const config = pattern.config;
+    config.backgroundColor = 'rgb(30,30,30)'
     if(pattern.name === 'Spiral') {
       config.data = {
         center: this.mousePosition

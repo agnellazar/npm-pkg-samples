@@ -1,30 +1,44 @@
 <app-header-bar></app-header-bar>
-  <div class="options-pane-height standard-border w-25 p-3 description-orientation footer-color options-pane-position">
-    <div class="w-100 align-items-center">
-      <button class="btn btn-primary w-50 pattern-btn" (click) ="onPatternChange()">
-        {{currentPattern.name}}
-      </button>
-    </div>
-    
-    <div class="w-100 p-3">
-      <div class="w-100">
-        <div class="w-50 float-left">
-          <label class="label"> Content </label>
+  <div id="dp-0" class="options-pane-height standard-border w-25 description-orientation footer-color options-pane-position standard-shadow background-color-primary">
+    <div class="overlay-anchor">
+      <div class="overlay-1 standard-border"></div>
+
+      <div class="rest-content p-3 pt-1">
+        <div class="w-100 align-items-center">
+          <div class="btn-color standard-border standard-shadow w-50 ml-25">
+            <div class="overlay-anchor">
+              <div class="overlay-1 standard-border elv-2"></div>
+              <!-- one -->
+              <div class="rest-content elv-3 position-relative">
+                <button class=" basic-btn w-100 pattern-btn text-align-center" (click) ="onPatternChange()">
+                  {{currentPattern.name}}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="w-50 float-left ">
-          <input type="string" placeholder="*" (change)="contentChange(content.value)" #content
-          class="float-right w-100">
+        <div class="w-100 p-3 pt-1">
+          <div class="w-100">
+            <div class="w-50 float-left">
+              <label class="label"> Content </label>
+            </div>
+            <div class="w-50 float-left ">
+              <input type="text" placeholder="*"  [(ngModel)]="contentInp" #content
+              class="float-right w-100 input-styling text-align-center">
+            </div>
+          </div>
+          <div class="w-100">
+            <div class="w-50 float-left">
+              <label class="label"> No. of stars </label>
+            </div>
+            <div class="w-50 float-left ">
+              <input type="number" placeholder="50" [(ngModel)]="countInp" #starCount
+              class="float-right w-100 input-styling text-align-center">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-100">
-        <div class="w-50 float-left">
-          <label class="label"> No. of stars </label>
-        </div>
-        <div class="w-50 float-left ">
-          <input type="string" placeholder="50" (change)="starCountChange(starCount.value)" #starCount
-          class="float-right w-100">
-        </div>
-      </div>
+
     </div>
   </div>
 <app-footer-bar></app-footer-bar>

@@ -1,94 +1,124 @@
 <app-header-bar></app-header-bar>
 <app-footer-bar></app-footer-bar>
 
-<div class="translucent-backdrop"></div>
-<div class="description-color description-orientation standard-border justify description-padding desc-font-size description-size-and-scroll">
+<!-- <div class="translucent-backdrop"></div> -->
+<div class="description-color description-orientation standard-border justify desc-font-size description-size description-position standard-shadow background-color-primary">
 
-    <h2><b><u>Introduction</u></b></h2>
-    <p>
-        This project was created to showcase the use of starfield-ag, basic-utilities-ag and vector-ag modules published to npm registry.
-        The project uses starfield-ag library to create all the effects. The basic-utilities-ag is used internally by starfield-ag to do basic
-        operations like converting x,t cordinates to top, left coordinates. Similarly vector-ag is used internally by starfield-ag to do all
-    the vector math. 
-    </p>
-
-
-    <h4><b><u>Starfield-ag:</u></b></h4>
-    <div class="w-100">
-        <div class="spacer-w d-inline-block"></div>
-            <a href="" class="link-w d-inline-block">Github</a> <a href="" class="link-w d-inline-block">npm registry</a>
-    </div>
-    <p>
-        
-        This module creates the patterns seen in the home page out of the box. It allows the user to modify the parameters of the patterns as 
-        needed for their use. In addition to that, it allows the user to override/provide methods that are used to create each frame of
-        the animation. The user can use this facility to create their own custom patterns easily. 	
-        
-        The module is written primarily in typeScript. It is then transpiled using tsc into both cjs and esm module . Then it is further
-        built into browser usable js file using webpack.
-        
-        The module exposes a class called starField. This class is instaiated to create the pattern on screen. While instantiating the config 
-        object is passed into the constructor which sets the properties of the pattern. The class takes care of creating the div, setting its
-        properties, creating pattern elements, updating them for each frame, animating and destroying of objects and divs. The object provides
-        methods to change the properties of pattern on the fly. These are used in the demonstration on home page.
-    </p>
+    <div class="overlay-anchor">
+        <div class="overlay-1 standard-border"></div>
+    
+        <div class="rest-content p-3 description-size description-content-position description-padding scroll-y">
+            <h2><b><u>Introduction</u></b></h2>
+            <p>
+                This project was created to showcase the use of starfield-ag, basic-utilities-ag and vector-ag modules published to npm registry.
+                The project uses starfield-ag library to create all the effects. The basic-utilities-ag is used internally by starfield-ag to do basic
+                operations like converting x,t cordinates to top, left coordinates. Similarly vector-ag is used internally by starfield-ag to do all
+            the vector math. 
+            </p>
 
 
-    <h4><b><u>basic-utilities-ag:</u></b></h4>
-    <div class="w-100">
-        <div class="spacer-w d-inline-block"></div>
-            <a href="" class="link-w d-inline-block">Github</a> <a href="" class="link-w d-inline-block">npm registry</a>
-    </div>
+            <div class="w-100 mb-2">
+                <div class="spacer-w d-inline-block links-height">
+                    <h4><b><u>Starfield-ag:</u></b></h4>
+                </div>
+                <div class="overlay-anchor links-height d-inline-block w-30 standard-border standard-shadow btn-color">
+                    <div class="overlay-1 standard-border"></div>
+                    <div class="rest-content d-inline-block w-100 links-height">
+                        <div class="links-height align-items-center d-flex">
+                            <a href="" class="link-w d-inline-block text-align-center  footer-color">Github</a> <a href="" class="link-w d-inline-block text-align-center  footer-color">npm registry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                
+                This module creates the patterns seen in the home page out of the box. It allows the user to modify the parameters of the patterns as 
+                needed for their use. In addition to that, it allows the user to override/provide methods that are used to create each frame of
+                the animation. The user can use this facility to create their own custom patterns easily. 	
+                
+                The module is written primarily in typeScript. It is then transpiled using tsc into both cjs and esm module . Then it is further
+                built into browser usable js file using webpack.
+                
+                The module exposes a class called starField. This class is instaiated to create the pattern on screen. While instantiating the config 
+                object is passed into the constructor which sets the properties of the pattern. The class takes care of creating the div, setting its
+                properties, creating pattern elements, updating them for each frame, animating and destroying of objects and divs. The object provides
+                methods to change the properties of pattern on the fly. These are used in the demonstration on home page.
+            </p>
 
-    <p>
-        This module is used for basic functionalities like converting x,y cordinates to top,left values to feed to browser. 
-        This is written in js and can be used as is in ts and js projects.
-    </p>
 
-    <h4><b><u>vector-ag:</u></b></h4>
-    <div class="w-100">
-        <div class="spacer-w d-inline-block"></div>
-            <a href="" class="link-w d-inline-block">Github</a> <a href="" class="link-w d-inline-block">npm registry</a>
-    </div>
+            <div class="w-100 mb-2">
+                <div class="spacer-w d-inline-block links-height">
+                    <h4><b><u>Basic-utilities-ag:</u></b></h4>
+                </div>
+                <div class="overlay-anchor links-height d-inline-block w-30 standard-border standard-shadow btn-color">
+                    <div class="overlay-1 standard-border"></div>
+                    <div class="rest-content d-inline-block w-100 links-height">
+                        <div class="links-height align-items-center d-flex">
+                            <a href="" class="link-w d-inline-block text-align-center  footer-color">Github</a> <a href="" class="link-w d-inline-block text-align-center  footer-color">npm registry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <p>
-        This module provides the vector2D class which is used in the starField-ag module extensively for all 2D-vector operations. It is also used
-        to write the funcitons which updates the postion of each element for each frame.
-    </p>
+            <p>
+                This module is used for basic functionalities like converting x,y cordinates to top,left values to feed to browser. 
+                This is written in js and can be used as is in ts and js projects.
+            </p>
+
+            <div class="w-100 mb-2">
+                <div class="spacer-w d-inline-block links-height">
+                    <h4><b><u>Vector-ag:</u></b></h4>
+                </div>
+                <div class="overlay-anchor links-height d-inline-block w-30 standard-border standard-shadow btn-color">
+                    <div class="overlay-1 standard-border"></div>
+                    <div class="rest-content d-inline-block w-100 links-height">
+                        <div class="links-height align-items-center d-flex">
+                            <a href="" class="link-w d-inline-block text-align-center  footer-color">Github</a> <a href="" class="link-w d-inline-block text-align-center  footer-color">npm registry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                This module provides the vector2D class which is used in the starField-ag module extensively for all 2D-vector operations. It is also used
+                to write the funcitons which updates the postion of each element for each frame.
+            </p>
 
 
 
-	<h2><b><u>Classes:</u></b></h2>
-	<h4><b><u>StarField:</u></b></h4>
-    <p>
-        This is the main class that is used by the client to create the pattern. Each instance of this class creates its own div which contains
-        a pattern. This class used the starFactory to create objects of required stars to create the mentioned pattern. All necesarry details for the 
-        pattern is passed to this class via constructor. The config must be an an Object of interface StarFieldConfig. The pattern is initialized when 
-        the init() method of this class is called. This class further exposes methods like changeStarCount and setStarContent to modify the pattern on
-        the fly. Also, it exposes the destroy method to remove the pattern and DOM elements created by it.
-    </p>
-	
-	<h4><b><u>Star:</u></b></h4>
-    <p>    
-        This class acts as the base class for creating other classes that actually makes up elements of each pattern. This class has implementation of
-        all the methods necesarry to init, animation and to remove/destroy the star. The methods setInitialPosition and update are implemented to throw error.
-        They are expected to be overridden by child classes. All the data needed to create the star object is passed into constructor of this class. The config
-        must be an object of interface StarConfig.
-    </p>
-	
-    <h4><b><u>circleStar, spiralStar, followerStar:</u></b></h4>
-    <p>
-        These are classes that form the elements of different patterns. These classes inherit the star class and override
-        the setInitialPosition and update methods to move the star as needed for each pattern. Hence, these classes have the essence of each pattern. Object of
-        these classes are created and updated every frame by starfield class to create the pattern. In order to create a custom pattern, the user should create a
-        similar class, and override the setInitialPosition and update methods, to move the star as needed for the pattern desiered. 
-    </p>
-	
-	
-    <h2><b><u>FactoryMethod:</u></b></h2>
-	<h4><b><u>starFactory:</u></b></h4> This is a factory method which returns object of classes derived from star class. It creates the objects and sets its config before returning it.
-	StarField class uses this factory method to create stars of required pattern. Factory method has been used as all the classes that create the pattern have been
-	derived from same base class.The classes have already overridden the needed methods and the created objects can be created and used directly without any modification. Hence, abstaract factory
-	method would not be suitable.Similarly, there is no complex building procedure for creating objects of these classes. Just passing config object to constructor is enough. Hence, builder pattern
-	would have been an overkill. Since each object creates a single pattern element, we need separate object for each pattern element, hence the objects/class cannot be singleton also.
+            <h2><b><u>Classes:</u></b></h2>
+            <h4><b><u>StarField:</u></b></h4>
+            <p>
+                This is the main class that is used by the client to create the pattern. Each instance of this class creates its own div which contains
+                a pattern. This class used the starFactory to create objects of required stars to create the mentioned pattern. All necesarry details for the 
+                pattern is passed to this class via constructor. The config must be an an Object of interface StarFieldConfig. The pattern is initialized when 
+                the init() method of this class is called. This class further exposes methods like changeStarCount and setStarContent to modify the pattern on
+                the fly. Also, it exposes the destroy method to remove the pattern and DOM elements created by it.
+            </p>
+            
+            <h4><b><u>Star:</u></b></h4>
+            <p>    
+                This class acts as the base class for creating other classes that actually makes up elements of each pattern. This class has implementation of
+                all the methods necesarry to init, animation and to remove/destroy the star. The methods setInitialPosition and update are implemented to throw error.
+                They are expected to be overridden by child classes. All the data needed to create the star object is passed into constructor of this class. The config
+                must be an object of interface StarConfig.
+            </p>
+            
+            <h4><b><u>circleStar, spiralStar, followerStar:</u></b></h4>
+            <p>
+                These are classes that form the elements of different patterns. These classes inherit the star class and override
+                the setInitialPosition and update methods to move the star as needed for each pattern. Hence, these classes have the essence of each pattern. Object of
+                these classes are created and updated every frame by starfield class to create the pattern. In order to create a custom pattern, the user should create a
+                similar class, and override the setInitialPosition and update methods, to move the star as needed for the pattern desiered. 
+            </p>
+            
+            
+            <h2><b><u>FactoryMethod:</u></b></h2>
+            <h4><b><u>starFactory:</u></b></h4> This is a factory method which returns object of classes derived from star class. It creates the objects and sets its config before returning it.
+            StarField class uses this factory method to create stars of required pattern. Factory method has been used as all the classes that create the pattern have been
+            derived from same base class.The classes have already overridden the needed methods and the created objects can be created and used directly without any modification. Hence, abstaract factory
+            method would not be suitable.Similarly, there is no complex building procedure for creating objects of these classes. Just passing config object to constructor is enough. Hence, builder pattern
+            would have been an overkill. Since each object creates a single pattern element, we need separate object for each pattern element, hence the objects/class cannot be singleton also.
+        </div>
+    <!-- </div> -->
 </div>
