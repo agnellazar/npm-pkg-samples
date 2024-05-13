@@ -3,6 +3,10 @@
 :root {
     --background-color-primary: rgb(30,30,30);
     --btn-color : #f97300;
+    --info-popover-zindex: 100;
+    --focus-layer-zindex: 50;
+    --focus-color: rgb(0,0,0,0.8);
+    --focus-color-trans: rgb(0,0,0,0.0);
 }
 
 .w-25 {
@@ -15,6 +19,10 @@
 
 .w-100 {
     width: 100%;
+}
+
+.w-33 {
+    width: 33% !important;
 }
 .float-right {
     float:right;
@@ -207,17 +215,11 @@
 .options-pane-position {
     position: fixed;
     top: 18vh;
-    left: calc(50vw - 25%/2);
+    left: calc(50vw - 25vw/2);
 }
 
 .standard-shadow {
     box-shadow: 5px 5px 8px black;
-}
-
-.options-pane-overlay {
-    z-index: -1;
-    background-color: white;
-    opacity: 0.1;
 }
 
 .overlay-anchor {
@@ -323,4 +325,12 @@
 
 .opacity-0 {
     opacity: 0 !important;
+}
+
+.opacity-2 {
+    opacity: 0.2 !important;
+}
+
+.ml-30p {
+    margin-left: 30% !important;
 }

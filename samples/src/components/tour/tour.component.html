@@ -1,0 +1,40 @@
+<!-- Pattern button -->
+<ng-container *ngIf="tourService.showPatternButtonInfo">
+    <div class="pattern-btn-focus focus-layer description-orientation"></div>
+    <div class="info-popover-zindex pattern-btn-info-position tooltip-arrow appear-delay-ani">
+        <div class="overlay-anchor pattern-btn-info-position background-color-primary standard-border standard-shadow">
+            <div class="overlay-1 standard-border standard-shadow opacity-2"></div>
+            <div class="rest-content footer-color p-3 justify text-align-center">
+                Use this button to change the background Patterns
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+<!-- Options Pane -->
+<ng-container *ngIf="tourService.showOptionPaneInfo">
+    <div class="option-pane-focus focus-layer description-orientation"></div>
+    <div class="info-popover-zindex options-pane-info-position tooltip-arrow appear-delay-ani">
+        <div class="overlay-anchor options-pane-info-position background-color-primary standard-border standard-shadow">
+            <div class="overlay-1 standard-border standard-shadow opacity-2"></div>
+            <div class="rest-content footer-color p-3 justify text-align-center">
+                Use these inputs to change desiered parameters of animation
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+<!-- Description button -->
+<ng-container *ngIf="tourService.showDescInfo">
+    <div class="desc-focus focus-layer description-orientation"></div>
+    <div class="info-popover-zindex desc-info-position tooltip-arrow appear-delay-ani">
+        <div class="overlay-anchor desc-info-position background-color-primary standard-border standard-shadow">
+            <div class="overlay-1 standard-border standard-shadow opacity-2"></div>
+            <div class="rest-content footer-color p-3 justify text-align-center">
+                Use these inputs to change desiered parameters of animation
+            </div>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,192 @@
+.tooltip-arrow::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.info-popover-zindex {
+    z-index: var(--info-popover-zindex) !important;
+}
+
+.appear-delay-ani {
+    animation-duration: 1.2s;
+    animation-name: appearDelay;
+}
+
+.pattern-btn-info-position {
+    
+    position: fixed;
+    top: 12vh;
+    left: 40vw;
+    
+    height: 6vh;
+    width: 20vw; 
+}
+
+.pattern-btn-focus {
+    animation-name: patternBtnAni;
+    border-top: 26.7vh solid var(--focus-color);
+    border-right: 53.35vw solid var(--focus-color);
+    border-bottom: 88.4vh solid var(--focus-color);
+    border-left: 53.4vw solid var(--focus-color);
+}
+
+
+.option-pane-focus {
+    animation-name: optionsPaneAni;
+    border-top: 32vh solid var(--focus-color);
+    border-right: 46.7vw solid var(--focus-color);
+    border-bottom: 82vh solid var(--focus-color);
+    border-left: 46.7vw solid var(--focus-color);
+}
+
+.options-pane-info-position {
+    
+    position: fixed;
+    top: 17vh;
+    left: 40vw;
+    
+    height: 6vh;
+    width: 20vw; 
+}
+
+
+.focus-layer {
+    position: fixed;
+    top: -10vh;
+    left: -10vw;
+    z-index: var(--focus-layer-zindex);
+    width: 120vw;
+    height: 120vh;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: var(--focus-color);    
+    animation-duration: 3s;
+
+}
+
+.desc-focus {
+    animation-name: descBtnAni;
+    border-top: 100vh solid var(--focus-color);
+    border-right: 22.9vw solid var(--focus-color);
+    border-bottom: 16.3vh solid var(--focus-color);
+    border-left: 86.5vw solid var(--focus-color);
+}
+
+
+.desc-info-position {
+    
+    position: fixed;
+    top: 88vh;
+    left: 74.9vw;
+    
+    height: 6vh;
+    width: 20vw; 
+}
+
+@keyframes patternBtnAni {
+    0% {
+        border-top: 0vh solid var(--focus-color);
+        border-right: 0vw solid var(--focus-color);
+        border-bottom: 0vh solid var(--focus-color);
+        border-left: 0vw solid var(--focus-color);
+    }
+
+    33% {
+        border-top: 26.7vh solid var(--focus-color);
+        border-right: 53.35vw solid var(--focus-color);
+        border-bottom: 88.4vh solid var(--focus-color);
+        border-left: 53.4vw solid var(--focus-color);
+    }
+    66% {
+        border-top: 26.7vh solid var(--focus-color);
+        border-right: 53.35vw solid var(--focus-color);
+        border-bottom: 88.4vh solid var(--focus-color);
+        border-left: 53.4vw solid var(--focus-color);
+    }
+
+    100% {
+        border-top: 26.7vh solid transparent;
+        border-right: 53.35vw solid transparent;
+        border-bottom: 88.4vh solid transparent;
+        border-left: 53.4vw solid transparent;
+    }
+}
+
+@keyframes optionsPaneAni {
+    0% {
+        border-top: 0vh solid var(--focus-color);
+        border-right: 0vw solid var(--focus-color);
+        border-bottom: 0vh solid var(--focus-color);
+        border-left: 0vw solid var(--focus-color);
+    }
+
+    33% {
+        border-top: 32vh solid var(--focus-color);
+        border-right: 46.7vw solid var(--focus-color);
+        border-bottom: 82vh solid var(--focus-color);
+        border-left: 46.7vw solid var(--focus-color);
+    }
+
+    66% {
+        border-top: 32vh solid var(--focus-color);
+        border-right: 46.7vw solid var(--focus-color);
+        border-bottom: 82vh solid var(--focus-color);
+        border-left: 46.7vw solid var(--focus-color);
+    }
+
+    100% {
+        border-top: 32vh solid transparent;
+        border-right: 46.7vw solid transparent;
+        border-bottom: 82vh solid transparent;
+        border-left: 46.7vw solid transparent;
+    }
+}
+
+
+@keyframes descBtnAni {
+    0% {
+        border-top: 0vh solid var(--focus-color);
+        border-right: 0vw solid var(--focus-color);
+        border-bottom: 0vh solid var(--focus-color);
+        border-left: 0vw solid var(--focus-color);
+    }
+
+    33% {
+        border-top: 100vh solid var(--focus-color);
+        border-right: 22.9vw solid var(--focus-color);
+        border-bottom: 16.3vh solid var(--focus-color);
+        border-left: 86.5vw solid var(--focus-color);
+    }
+
+    66% {
+        border-top: 100vh solid var(--focus-color);
+        border-right: 22.9vw solid var(--focus-color);
+        border-bottom: 16.3vh solid var(--focus-color);
+        border-left: 86.5vw solid var(--focus-color);
+    }
+
+    100% {
+        border-top: 100vh solid transparent;
+        border-right: 22.9vw solid transparent;
+        border-bottom: 16.3vh solid transparent;
+        border-left: 86.5vw solid transparent;
+    }
+}
+
+@keyframes appearDelay {
+    0% {
+        visibility: hidden;
+    }
+    99% {
+        visibility: hidden;
+      }
+      100% {
+        visibility: visible;
+      }
+}

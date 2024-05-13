@@ -5,22 +5,34 @@
     <div class="overlay-anchor">
         <div class="overlay-1 standard-border"></div>
     
-        <div class="w-50 pl-4 float-left footer-height line-height footer-color h-100 d-flex align-items-center">
+        <div class="w-33 pl-4 float-left footer-height line-height footer-color h-100 d-flex align-items-center">
             Created by:- Agnel Lazar Alappat
         </div>
-            <div class="w-50 footer-height align-items-center d-flex">
-                <div class="w-100">
-                    <div class="w-40 btn-color float-right mr-4 standard-border standard-shadow">
-                        <div class="basic-btn overlay-anchor">
-                            <div class="overlay-1 elv-2 standard-border opacity-0"></div>
-                            <div class="rest-content elv-3 position-relative">
-                                <button (click)="btnClick()" class=" basic-btn float-right footer-color standard-border w-100 background-transparent">
-                                    {{btnText}}
-                                </button>
-                            </div>
+        <div class="w-33 footer-height align-items-center d-flex float-left ">
+            <div class="w-40 btn-color standard-border standard-shadow ml-30p">
+                <div class="basic-btn overlay-anchor">
+                    <div class="overlay-1 elv-2 standard-border opacity-0"></div>
+                    <div class="rest-content elv-3 position-relative">
+                        <button (click)="tourBtnClick()" class=" basic-btn float-right footer-color standard-border w-100 background-transparent text-align-center">
+                            Get a tour of website
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-33 footer-height align-items-center d-flex float-left">
+            <div class="w-100">
+                <div class="w-40 btn-color float-right mr-4 standard-border standard-shadow">
+                    <div class="basic-btn overlay-anchor">
+                        <div class="overlay-1 elv-2 standard-border opacity-0"></div>
+                        <div class="rest-content elv-3 position-relative">
+                            <button (click)="navBtnClick()" class=" basic-btn float-right footer-color standard-border w-100 background-transparent">
+                                {{btnText}}
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>

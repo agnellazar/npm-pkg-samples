@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { TourService } from 'src/services/tour.service';
 
 @Component({
   selector: 'app-footer-bar',
@@ -13,14 +14,15 @@ export class FooterBarComponent implements OnInit {
 
   @Input() btnState: number;
   constructor(
-    private router: Router
+    private router: Router,
+    private tourService: TourService
   ) { }
 
   ngOnInit(): void {
     this.updateButtonState();
   }
 
-  btnClick() {
+  navBtnClick() {
     if(this.router.url.includes('desc')) {
       this.router.navigate(['']);
     } else {
@@ -34,5 +36,9 @@ export class FooterBarComponent implements OnInit {
     } else {
       this.btnText = this.btnTexts[0];
     }
+  }
+
+  tourBtnClick() {
+    this.tourService.startTour();
   }
 }

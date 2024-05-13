@@ -8,13 +8,15 @@ import { DemoComponent } from 'src/components/demo/demo.component';
 import { FooterBarComponent } from 'src/components/footer-bar/footer-bar.component';
 import { HeaderBarComponent } from 'src/components/header-bar/header-bar.component';
 import { FormsModule } from '@angular/forms';
+import { TourComponent } from 'src/components/tour/tour.component';
 @NgModule({
   declarations: [
     AppComponent,
     DescriptionComponent,
     DemoComponent,
     FooterBarComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    TourComponent
   ],
   imports: [
     FormsModule,
