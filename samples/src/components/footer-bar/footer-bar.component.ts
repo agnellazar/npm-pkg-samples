@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { TourService } from 'src/services/tour.service';
-
+import { GeneralService } from 'src/services/general.service';
 @Component({
   selector: 'app-footer-bar',
   templateUrl: './footer-bar.component.html',
@@ -9,32 +9,21 @@ import { TourService } from 'src/services/tour.service';
 })
 export class FooterBarComponent implements OnInit {
 
-  btnTexts = ['Click to View Description',  'Click to go back to demo']
-  btnText: string;
-
   @Input() btnState: number;
   constructor(
     private router: Router,
-    private tourService: TourService
+    private tourService: TourService,
+    public generalService: GeneralService
   ) { }
 
   ngOnInit(): void {
-    this.updateButtonState();
   }
 
   navBtnClick() {
-    if(this.router.url.includes('desc')) {
-      this.router.navigate(['']);
+    if(this.generalService.currentPage === this.generalService.pages.demo) {
+      this.generalService.navigateToPage(this.generalService.pages.desc);
     } else {
-      this.router.navigate(['desc'])
-    }
-  }
-
-  updateButtonState() {
-    if(this.router.url.includes('desc')) {
-      this.btnText = this.btnTexts[1];
-    } else {
-      this.btnText = this.btnTexts[0];
+      this.generalService.navigateToPage(this.generalService.pages.demo);
     }
   }
 

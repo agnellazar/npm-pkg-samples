@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActionHandlingService } from 'src/services/action-handling.service';
-
+import { GeneralService } from 'src/services/general.service';
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
@@ -16,7 +16,10 @@ export class DemoComponent implements OnInit {
   countInpDataDefault: any = '50'
 
 
-  constructor(  private actionHandlingService: ActionHandlingService ) {
+  constructor(  
+    private actionHandlingService: ActionHandlingService,
+    private generalService: GeneralService
+     ) {
   }
 
 
@@ -26,7 +29,7 @@ export class DemoComponent implements OnInit {
     if( !this.actionHandlingService.starFieldHandle) {
       this.actionHandlingService.buildAndInitializePattern(this.currentPattern);
     }
-    // this.addElevation();
+    this.generalService.updateCurrentPage();
   }
 
 
@@ -49,7 +52,6 @@ export class DemoComponent implements OnInit {
     if(data != this.contentInp){
       this.contentInputData = data;
       this.actionHandlingService.changeStarContent(data);
-      console.log('contentInp',this.contentInputData);
     }
   }
 
@@ -61,7 +63,6 @@ export class DemoComponent implements OnInit {
     if(data!=this.countInpData) {
       this.countInpData = data;
       this.actionHandlingService.changeStarCount(data);
-      console.log('countInp',this.countInpData);
     }
   }
 }

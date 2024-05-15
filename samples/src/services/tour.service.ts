@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { GeneralService } from './general.service';
 @Injectable({
   providedIn: 'root'
 })
@@ -9,9 +10,13 @@ export class TourService {
   showOptionPaneInfo: boolean = false;
   showDescInfo: boolean = false;
 
-  constructor() { }
+  constructor(
+    public router: Router,
+    private generalService: GeneralService
+  ) { }
 
   async startTour() {
+    this.generalService.navigateToPage(this.generalService.pages.demo);
     this.showPatternButtonInfo = true;
     this.showOptionPaneInfo = false;
     this.showDescInfo = false;

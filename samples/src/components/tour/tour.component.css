@@ -14,45 +14,44 @@
 }
 
 .appear-delay-ani {
-    animation-duration: 1.2s;
+    animation-duration: 5s;
     animation-name: appearDelay;
 }
 
 .pattern-btn-info-position {
     
     position: fixed;
-    top: 12vh;
+    top: 8vh;
     left: 40vw;
-    
-    height: 6vh;
-    width: 20vw; 
+
+    height: 10vh;
+    width: 20vw;
 }
 
 .pattern-btn-focus {
     animation-name: patternBtnAni;
     border-top: 26.7vh solid var(--focus-color);
     border-right: 53.35vw solid var(--focus-color);
-    border-bottom: 88.4vh solid var(--focus-color);
+    border-bottom: 85.8vh solid var(--focus-color);
     border-left: 53.4vw solid var(--focus-color);
 }
 
 
 .option-pane-focus {
     animation-name: optionsPaneAni;
-    border-top: 32vh solid var(--focus-color);
+    border-top: 36vh solid var(--focus-color);
     border-right: 46.7vw solid var(--focus-color);
-    border-bottom: 82vh solid var(--focus-color);
+    border-bottom: 76vh solid var(--focus-color);
     border-left: 46.7vw solid var(--focus-color);
 }
 
 .options-pane-info-position {
-    
     position: fixed;
-    top: 17vh;
+    top: 15vh;
     left: 40vw;
-    
-    height: 6vh;
-    width: 20vw; 
+
+    height: 11vh;
+    width: 20vw;
 }
 
 
@@ -66,27 +65,27 @@
     box-sizing: border-box;
     border-style: solid;
     border-color: var(--focus-color);    
-    animation-duration: 3s;
+    animation-duration: 5s;
 
 }
 
 .desc-focus {
     animation-name: descBtnAni;
-    border-top: 100vh solid var(--focus-color);
-    border-right: 22.9vw solid var(--focus-color);
-    border-bottom: 16.3vh solid var(--focus-color);
-    border-left: 86.5vw solid var(--focus-color);
+    border-top: 97.9vh solid var(--focus-color);
+    border-right: 23.1vw solid var(--focus-color);
+    border-bottom: 16.4vh solid var(--focus-color);
+    border-left: 86.3vw solid var(--focus-color);
 }
 
 
 .desc-info-position {
     
     position: fixed;
-    top: 88vh;
+    top: 79vh;
     left: 74.9vw;
-    
-    height: 6vh;
-    width: 20vw; 
+
+    height: 11vh;
+    width: 20vw;
 }
 
 @keyframes patternBtnAni {
@@ -100,20 +99,20 @@
     33% {
         border-top: 26.7vh solid var(--focus-color);
         border-right: 53.35vw solid var(--focus-color);
-        border-bottom: 88.4vh solid var(--focus-color);
+        border-bottom: 85.8vh solid var(--focus-color);
         border-left: 53.4vw solid var(--focus-color);
     }
     66% {
         border-top: 26.7vh solid var(--focus-color);
         border-right: 53.35vw solid var(--focus-color);
-        border-bottom: 88.4vh solid var(--focus-color);
+        border-bottom: 85.8vh solid var(--focus-color);
         border-left: 53.4vw solid var(--focus-color);
     }
 
     100% {
         border-top: 26.7vh solid transparent;
         border-right: 53.35vw solid transparent;
-        border-bottom: 88.4vh solid transparent;
+        border-bottom: 85.8vh solid transparent;
         border-left: 53.4vw solid transparent;
     }
 }
@@ -127,24 +126,24 @@
     }
 
     33% {
-        border-top: 32vh solid var(--focus-color);
+        border-top: 36vh solid var(--focus-color);
         border-right: 46.7vw solid var(--focus-color);
-        border-bottom: 82vh solid var(--focus-color);
+        border-bottom: 76vh solid var(--focus-color);
         border-left: 46.7vw solid var(--focus-color);
     }
 
     66% {
-        border-top: 32vh solid var(--focus-color);
+        border-top: 36vh solid var(--focus-color);
         border-right: 46.7vw solid var(--focus-color);
-        border-bottom: 82vh solid var(--focus-color);
+        border-bottom: 76vh solid var(--focus-color);
         border-left: 46.7vw solid var(--focus-color);
     }
 
     100% {
-        border-top: 32vh solid transparent;
-        border-right: 46.7vw solid transparent;
-        border-bottom: 82vh solid transparent;
-        border-left: 46.7vw solid transparent;
+        border-top: 36vh solid transparent  ;
+        border-right: 46.7vw solid transparent  ;
+        border-bottom: 76vh solid transparent  ;
+        border-left: 46.7vw solid transparent  ;
     }
 }
 
@@ -158,35 +157,44 @@
     }
 
     33% {
-        border-top: 100vh solid var(--focus-color);
-        border-right: 22.9vw solid var(--focus-color);
-        border-bottom: 16.3vh solid var(--focus-color);
-        border-left: 86.5vw solid var(--focus-color);
+        border-top: 97.9vh solid var(--focus-color);
+        border-right: 23.1vw solid var(--focus-color);
+        border-bottom: 16.4vh solid var(--focus-color);
+        border-left: 86.3vw solid var(--focus-color);
     }
 
     66% {
-        border-top: 100vh solid var(--focus-color);
-        border-right: 22.9vw solid var(--focus-color);
-        border-bottom: 16.3vh solid var(--focus-color);
-        border-left: 86.5vw solid var(--focus-color);
+        border-top: 97.9vh solid var(--focus-color);
+        border-right: 23.1vw solid var(--focus-color);
+        border-bottom: 16.4vh solid var(--focus-color);
+        border-left: 86.3vw solid var(--focus-color);
     }
 
     100% {
-        border-top: 100vh solid transparent;
-        border-right: 22.9vw solid transparent;
-        border-bottom: 16.3vh solid transparent;
-        border-left: 86.5vw solid transparent;
+        border-top: 97.9vh solid  transparent  ;
+        border-right: 23.1vw solid  transparent  ;
+        border-bottom: 16.4vh solid  transparent  ;
+        border-left: 86.3vw solid  transparent  ;
     }
 }
 
 @keyframes appearDelay {
     0% {
-        visibility: hidden;
+        opacity: 0;
     }
-    99% {
-        visibility: hidden;
-      }
-      100% {
-        visibility: visible;
-      }
+    32% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
