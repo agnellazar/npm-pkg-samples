@@ -1,32 +1,36 @@
-<div class="w-90 footer-background footer-position ml-5p 
-            footer-height footer-color description-orientation 
-            background-color-primary standard-border standard-shadow">
+<div class="w-100 background-black footer-position
+            footer-color align-items-center d-flex
+            standard-border standard-shadow footer-limits">
     
-    <div class="overlay-anchor">
-        <div class="overlay-1 standard-border"></div>
+    <!-- <div class="overlay-anchor">
+        <div class="overlay-1 standard-border"></div> -->
     
-        <div class="w-33 pl-4 float-left footer-height line-height footer-color h-100 d-flex align-items-center">
+        <div class="w-33 pl-4 float-left line-height footer-color h-100 d-flex align-items-center">
             Created by:- Agnel Lazar Alappat
         </div>
-        <div class="w-33 footer-height align-items-center d-flex float-left ">
-            <div class="w-40 btn-color standard-border standard-shadow ml-30p">
+        <div class="w-33 align-items-center d-flex float-left ">
+            <div class="w-40 btn-color standard-border standard-shadow ml-30p footer-btn-limits">
                 <div class="basic-btn overlay-anchor">
                     <div class="overlay-1 elv-2 standard-border opacity-0"></div>
                     <div class="rest-content elv-3 position-relative">
-                        <button (click)="tourBtnClick()" class=" basic-btn float-right footer-color standard-border w-100 background-transparent text-align-center">
-                            Get a tour of website
+                        <button (click)="tourBtnClick()" class=" basic-btn float-right footer-color
+                        h-fit-content btn-padding standard-border
+                        w-100 background-transparent text-align-center">
+                            Tour
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-33 footer-height align-items-center d-flex float-left">
+        <div class="w-33 align-items-center d-flex float-left">
             <div class="w-100">
-                <div class="w-40 btn-color float-right mr-4 standard-border standard-shadow">
+                <div class="w-40 btn-color float-right mr-4 standard-border standard-shadow footer-btn-limits">
                     <div class="basic-btn overlay-anchor">
                         <div class="overlay-1 elv-2 standard-border opacity-0"></div>
                         <div class="rest-content elv-3 position-relative">
-                            <button (click)="navBtnClick()" class=" basic-btn float-right footer-color standard-border w-100 background-transparent">
+                            <button (click)="navBtnClick()" class=" basic-btn float-right footer-color 
+                            h-fit-content btn-padding standard-border 
+                            w-100 background-transparent text-align-center">
                                 {{generalService.navBtnText}}
                             </button>
                         </div>
@@ -34,5 +38,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>

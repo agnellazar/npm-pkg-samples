@@ -13,8 +13,8 @@ export class GeneralService {
   currentPage:string = this.pages.demo;
 
   navBtnTexts = {
-    demo:'Click to View Description',  
-    desc:'Click to go back to demo'
+    demo:'Description',  
+    desc:'Demo'
   }
   navBtnText:string = this.navBtnTexts[this.currentPage];
   constructor(

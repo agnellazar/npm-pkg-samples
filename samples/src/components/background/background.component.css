@@ -1,0 +1,9 @@
+.background {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color-primary);
+    /* background: radial-gradient(circle, rgba(35,35,35,1) 0%, rgba(12,12,12,1) 100%); */
+    z-index: var(--background-zindex);
+}

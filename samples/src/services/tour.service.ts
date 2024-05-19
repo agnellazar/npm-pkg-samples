@@ -18,21 +18,21 @@ export class TourService {
   async startTour() {
     this.generalService.navigateToPage(this.generalService.pages.demo);
     this.showPatternButtonInfo = true;
-    this.showOptionPaneInfo = false;
-    this.showDescInfo = false;
+    // this.showOptionPaneInfo = false;
+    // this.showDescInfo = false;
 
-    setTimeout(()=>{
-      this.showPatternButtonInfo = false;
-      this.showOptionPaneInfo = true;
-    },3000);
+    // setTimeout(()=>{
+    //   this.showPatternButtonInfo = false;
+    //   this.showOptionPaneInfo = true;
+    // },3000);
 
-    setTimeout(()=>{
-      this.showOptionPaneInfo = false;
-      this.showDescInfo = true;
-    },6000);
+    // setTimeout(()=>{
+    //   this.showOptionPaneInfo = false;
+    //   this.showDescInfo = true;
+    // },6000);
     
-    setTimeout(()=>{
-      this.showDescInfo = false;
-    },9000);
+    // setTimeout(()=>{
+    //   this.showDescInfo = false;
+    // },9000);
   }
 }

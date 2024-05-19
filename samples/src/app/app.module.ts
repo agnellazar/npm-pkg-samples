@@ -9,6 +9,7 @@ import { FooterBarComponent } from 'src/components/footer-bar/footer-bar.compone
 import { HeaderBarComponent } from 'src/components/header-bar/header-bar.component';
 import { FormsModule } from '@angular/forms';
 import { TourComponent } from 'src/components/tour/tour.component';
+import { BackgroundComponent } from 'src/components/background/background.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { TourComponent } from 'src/components/tour/tour.component';
     DemoComponent,
     FooterBarComponent,
     HeaderBarComponent,
-    TourComponent
+    TourComponent,
+    BackgroundComponent
   ],
   imports: [
     FormsModule,

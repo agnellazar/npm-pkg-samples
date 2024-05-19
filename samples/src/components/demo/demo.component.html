@@ -1,41 +1,72 @@
-  <div id="dp-0" class="options-pane-height standard-border w-25 description-orientation footer-color options-pane-position standard-shadow background-color-primary">
-    <div class="overlay-anchor">
-      <div class="overlay-1 standard-border"></div>
+<div class="overflow-hidden">
 
-      <div class="rest-content p-3 pt-1">
-        <div class="w-100 align-items-center">
-          <div class="btn-color standard-border standard-shadow w-50 ml-25">
-            <div class="overlay-anchor">
-              <div class="overlay-1 standard-border elv-2"></div>
-              <div class="rest-content elv-3 position-relative">
-                <button class=" basic-btn w-100 pattern-btn text-align-center" (click) ="onPatternChange()">
-                  {{currentPattern.name}}
-                </button>
+  <div class="left-triangle card-padding-for-bg-left standard-border  d-inline-block">
+    <div id="dp-0" class="standard-border background-color-primary w-100 footer-color standard-shadow ">
+      <div class="overlay-anchor">
+        <!-- <div class="overlay-1 standard-border z-index-0"></div> -->
+
+        <div class="rest-content p-3 pt-1">
+          <div class="w-100 align-items-center">
+            <div class="btn-color standard-border standard-shadow w-50 ml-25">
+              <div class="overlay-anchor">
+                <div class="overlay-1 standard-border elv-2"></div>
+                <div class="rest-content elv-3 position-relative">
+                  <button class=" basic-btn w-100 pattern-btn text-align-center btn-padding h-fit-content" (click) ="onPatternChange()">
+                    {{currentPattern.name}}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 p-3 pt-1">
+            <div class="w-100 d-flex">
+              <div class="w-50 d-inline-block">
+                <label class="label"> Content </label>
+              </div>
+              <div class="w-50 d-inline-block ">
+                <input type="text" placeholder="*"  [(ngModel)]="contentInp" #content
+                class="float-right w-100 input-styling text-align-center">
+              </div>
+            </div>
+            <div class="w-100 d-flex">
+              <div class="w-50 d-inline-block">
+                <label class="label"> No. of stars </label>
+              </div>
+              <div class="w-50 d-inline-block ">
+                <input type="number" placeholder="50" [(ngModel)]="countInp" #starCount
+                class="float-right w-100 input-styling text-align-center">
               </div>
             </div>
           </div>
         </div>
-        <div class="w-100 p-3 pt-1">
-          <div class="w-100">
-            <div class="w-50 float-left">
-              <label class="label"> Content </label>
-            </div>
-            <div class="w-50 float-left ">
-              <input type="text" placeholder="*"  [(ngModel)]="contentInp" #content
-              class="float-right w-100 input-styling text-align-center">
-            </div>
-          </div>
-          <div class="w-100">
-            <div class="w-50 float-left">
-              <label class="label"> No. of stars </label>
-            </div>
-            <div class="w-50 float-left ">
-              <input type="number" placeholder="50" [(ngModel)]="countInp" #starCount
-              class="float-right w-100 input-styling text-align-center">
-            </div>
-          </div>
-        </div>
-      </div>
 
+      </div>
     </div>
   </div>
+
+
+
+  <!-- Side block -->
+
+  <div class="card-padding-for-bg-right cfl-border-grad 
+               standard-border
+              cfl-container float-right d-inline-block
+              footer-color">
+    <div class=" background-color-primary standard-border standard-shadow">
+      <div class="overlay-anchor">
+        <!-- <div class="overlay-1 standard-border elv-2"></div> -->
+        <div class="rest-content cfl-width">
+          <h1 class="my-0 cfl-heading-padding">
+            STARFIELD-AG IS A NPM PACKAGE THAT ANIMATES DIV MOVEMENTS TO CREATE
+            VARIOUS PATTERNS.
+          </h1>
+        </div>
+        <div class="cfl-text-2-padding">
+          Feel free to play around. 
+          <br>Take a tour if you want.
+          <br> Go to description for full details.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

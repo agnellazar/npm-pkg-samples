@@ -31,7 +31,7 @@ export class ActionHandlingService {
     }
 
     const config = pattern.config;
-    config.backgroundColor = 'rgb(30,30,30)'
+    config.backgroundColor = 'transparent'
     if(pattern.name === 'Spiral') {
       config.data = {
         center: this.mousePosition
