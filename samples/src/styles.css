@@ -1,3 +1,4 @@
+
 /* You can add global styles to this file, and also import other style files */
 
 :root {
@@ -370,4 +371,20 @@ body {
 
 .overflow-hidden{
     overflow: hidden;
+}
+
+.card-padding-for-bg-left {
+    /* padding: 2rem; */
+    padding-top: 0;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+}
+
+.card-padding-for-bg-right {
+    /* padding: 2rem; */
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
 }

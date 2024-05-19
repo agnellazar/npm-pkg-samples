@@ -17,24 +17,6 @@
 
     margin-top: 2rem;
 }
-
-.card-padding-for-bg-left {
-    /* padding: 2rem; */
-    padding-top: 0;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 0;
-}
-
-
-.card-padding-for-bg-right {
-    /* padding: 2rem; */
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-}
-
 /* .options-pane-height {
     height: 16vh;
 } */
@@ -55,9 +37,9 @@
 
 
 .cfl-border-grad {
-    width: 55rem;
+    width: 60rem;
     background-image: var(--card-bg-img-right);
-    margin-right:calc(1vw + 2rem);
+    /* margin-right: calc(1vw + 2rem); */
 }
 
 .cfl-container {
